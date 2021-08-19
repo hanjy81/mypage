@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     _PROJECT_NAME: "user5-mypage"
- 
+
 phases:
   install:
     runtime-versions:
@@ -48,7 +48,7 @@ phases:
               app: $_PROJECT_NAME
           spec:
             ports:
-              - port: 80
+              - port: 8080
                 targetPort: 8080
             selector:
               app: $_PROJECT_NAME
