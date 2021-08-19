@@ -41,6 +41,13 @@ phases:
       - |
           cat <<EOF | kubectl apply -f -
           apiVersion: v1
+          kind: Namespace
+          metadata:
+            name: ingress-basic
+          EOF
+      - |
+          cat <<EOF | kubectl apply -f -
+          apiVersion: v1
           kind: Service
           metadata:
             name: $_PROJECT_NAME
